@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  
+  <!-- Primary Meta Tags & SEO -->
+  <title>AI Pawang Loker - Bikin CV ATS & Cover Letter Inggris dalam 5 Detik</title>
+  <meta name="title" content="AI Pawang Loker - Bikin CV ATS & Cover Letter Inggris dalam 5 Detik" />
+  <meta name="description" content="Bot Telegram otomatis yang menyulap teks lowongan kerja menjadi Surat Lamaran Bahasa Inggris profesional dan CV standar ATS hanya dalam 5 detik. Coba gratis sekarang!" />
+  
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AI Pawang Loker - Stop Ditolak HRD" />
+  <meta property="og:description" content="Sulap teks loker mentah jadi Cover Letter Inggris profesional & CV ATS lolos screening dalam 5 detik via Telegram." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1200&auto=format&fit=crop&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts: Poppins & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            display: ['Poppins', '"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+              950: '#0f172a',
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    /* Custom utility animations */
+    @keyframes pulse-subtle {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+    .animate-pulse-subtle {
+      animation: pulse-subtle 3s infinite ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-blue-100 selection:text-blue-900 pb-20 md:pb-0">
+
+  <!-- ================= 1. NAVBAR ================= -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2.5 group">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-primary-600 to-primary-800 text-white flex items-center justify-center shadow-md shadow-primary-600/20 group-hover:scale-105 transition-transform">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 leading-none">
+            AI Pawang Loker
+          </span>
+          <span class="text-[10px] font-semibold text-primary-600 uppercase tracking-wider mt-0.5">
+            Telegram Bot • 5s ATS
+          </span>
+        </div>
+      </a>
+
+      <!-- Navigation & Action -->
+      <div class="flex items-center gap-3 sm:gap-4">
+        <a href="#cara-kerja" class="hidden md:inline-block text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors">
+          Cara Kerja
+        </a>
+        <a href="#fitur" class="hidden md:inline-block text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors">
+          Keunggulan
+        </a>
+        <a href="#harga" class="hidden md:inline-block text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors">
+          Biaya
+        </a>
+        <a 
+          href="#" 
+          onclick="openTelegramModal(event)" 
+          class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700 active:scale-95 transition-all shadow-sm shadow-primary-600/30"
+        >
+          Coba Gratis
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 2. HERO SECTION ================= -->
+  <section class="relative overflow-hidden pt-8 pb-16 md:pt-14 md:pb-24 bg-gradient-to-b from-white via-primary-50/40 to-slate-50 border-b border-slate-200/60">
+    <!-- Background subtle grid pattern -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f01f_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f01f_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10 text-center">
+      
+      <!-- Trust Pill -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs sm:text-sm font-semibold mb-6 shadow-sm">
+        <span class="flex h-2 w-2 rounded-full bg-blue-600 animate-ping"></span>
+        <span>⚡ 100% Gratis 2x Coba Pertama • Tanpa Registrasi Rumit</span>
+      </div>
+
+      <!-- Main Punchy Headline -->
+      <h1 class="font-display font-extrabold text-3xl sm:text-5xl lg:text-6xl text-slate-900 tracking-tight leading-[1.15] mb-5">
+        Stop Ditolak HRD.<br class="hidden sm:inline" />
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-700 via-primary-600 to-blue-500">
+          Bikin CV ATS & Surat Lamaran Inggris
+        </span>
+        <br />dalam 5 Detik.
+      </h1>
+
+      <!-- Sub-headline -->
+      <p class="max-w-2xl mx-auto text-base sm:text-lg text-slate-600 leading-relaxed mb-8">
+        Cukup forward teks loker mentah ke Telegram bot kami. AI khusus HRD langsung meracik 
+        <strong class="text-slate-900 font-semibold">Cover Letter Bahasa Inggris profesional</strong> dan 
+        <strong class="text-slate-900 font-semibold">poin kualifikasi CV standar ATS</strong> yang disesuaikan persis dengan lowongan idamanmu.
+      </p>
+
+      <!-- Primary Big CTA Button -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-6">
+        <a 
+          href="#" 
+          onclick="openTelegramModal(event)" 
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-base sm:text-lg font-bold text-white bg-primary-600 hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-600/30 active:scale-[0.98] transition-all transform animate-pulse-subtle"
+        >
+          <span>Coba Gratis di Telegram</span>
+          <span class="text-xl">🚀</span>
+        </a>
+      </div>
+
+      <!-- Trust Badges & Social Proof -->
+      <div class="flex flex-wrap items-center justify-center gap-y-2 gap-x-5 text-xs sm:text-sm text-slate-500 font-medium">
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+          2x Kuota Gratis Langsung Pakai
+        </span>
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+          Format Langsung Siap Copas
+        </span>
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+          Standar Screening Multinasional
+        </span>
+      </div>
+
+      <!-- Telegram Bot Interactive Simulation Mockup -->
+      <div class="mt-10 sm:mt-14 max-w-2xl mx-auto text-left">
+        <div class="rounded-2xl bg-white border border-slate-200/90 shadow-2xl shadow-blue-900/10 overflow-hidden">
+          
+          <!-- Telegram Window Header -->
+          <div class="bg-primary-800 text-white px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center font-bold text-white text-sm">
+                🤖
+              </div>
+              <div>
+                <h2 class="text-sm font-semibold leading-tight">AI Pawang Loker Bot</h2>
+                <p class="text-[11px] text-blue-200 flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block"></span> bot aktif • respon &lt; 5 detik
+                </p>
+              </div>
+            </div>
+            <span class="text-[11px] bg-white/10 px-2.5 py-1 rounded-full font-mono text-blue-100">
+              ATS Engine v2.4
+            </span>
+          </div>
+
+          <!-- Chat Messages Area -->
+          <div class="p-4 sm:p-5 bg-slate-100/70 space-y-4 text-xs sm:text-sm">
+            
+            <!-- User Message (Forwarded Job Post) -->
+            <div class="flex justify-end">
+              <div class="max-w-[85%] bg-primary-600 text-white rounded-2xl rounded-tr-none p-3.5 shadow-sm">
+                <p class="text-[11px] font-semibold text-blue-200 mb-1 flex items-center gap-1">
+                  <span>↗ Diteruskan dari Glints/LinkedIn</span>
+                </p>
+                <p class="line-clamp-3 italic opacity-95">
+                  "Dibutuhkan: Junior Social Media & Content Creator. Syarat: Mahir copywriting, Canva, analisa metrik engagement TikTok & IG, komunikasi proaktif..."
+                </p>
+                <span class="block text-right text-[10px] text-blue-200 mt-1">10:42 WIB</span>
+              </div>
+            </div>
+
+            <!-- Bot Response (Instant Result) -->
+            <div class="flex justify-start">
+              <div class="max-w-[92%] bg-white text-slate-800 rounded-2xl rounded-tl-none p-4 border border-slate-200 shadow-sm">
+                <div class="flex items-center justify-between pb-2 mb-2 border-b border-slate-100">
+                  <span class="font-bold text-primary-700 flex items-center gap-1 text-xs">
+                    ⚡ Diproses dalam 4.2 detik • Standar HRD
+                  </span>
+                  <span class="bg-emerald-50 text-emerald-700 font-semibold px-2 py-0.5 rounded text-[10px] border border-emerald-200">
+                    ATS Match: 96%
+                  </span>
+                </div>
+
+                <!-- Tabs to preview results -->
+                <div class="flex gap-2 mb-3">
+                  <button id="tab-cl" onclick="switchTab('cl')" class="px-2.5 py-1 rounded-md text-xs font-semibold bg-primary-50 text-primary-700 border border-primary-200">
+                    ✉️ Cover Letter (English)
+                  </button>
+                  <button id="tab-cv" onclick="switchTab('cv')" class="px-2.5 py-1 rounded-md text-xs font-medium text-slate-600 hover:bg-slate-50 border border-transparent">
+                    📄 CV Action Verbs (ATS)
+                  </button>
+                </div>
+
+                <!-- Content: Cover Letter -->
+                <div id="content-cl" class="bg-slate-50 p-3 rounded-lg border border-slate-200/70 font-mono text-[11px] sm:text-xs text-slate-700 leading-relaxed">
+                  <p class="font-bold text-slate-900 mb-1">Subject: Application for Junior Social Media Specialist - [Your Name]</p>
+                  <p class="mb-2">Dear Hiring Team,</p>
+                  <p>I am writing to express my enthusiastic interest in the Social Media Specialist role. Having driven measurable engagement through data-backed content workflows and short-form video storytelling, I am prepared to scale your brand's presence across TikTok and Instagram...</p>
+                </div>
+
+                <!-- Content: CV Points (hidden by default) -->
+                <div id="content-cv" class="hidden bg-slate-50 p-3 rounded-lg border border-slate-200/70 font-mono text-[11px] sm:text-xs text-slate-700 leading-relaxed">
+                  <p class="font-bold text-slate-900 mb-1">Poin Peluru Pengalaman (ATS Keywords Highlighted):</p>
+                  <ul class="list-disc list-inside space-y-1">
+                    <li><strong>Orchestrated</strong> multi-channel content calendar, increasing monthly organic reach by 42%.</li>
+                    <li><strong>Analyzed</strong> audience retention analytics to pivot short-form content hooks, achieving 150k+ views.</li>
+                  </ul>
+                </div>
+
+                <!-- Action button inside bot -->
+                <div class="mt-3 flex items-center justify-between pt-2 border-t border-slate-100">
+                  <span class="text-[11px] text-slate-500">Tinggal klik & paste ke email</span>
+                  <button onclick="copyDemoText()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-xs font-medium transition-colors">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                    <span id="copy-btn-label">Salin Contoh Teks</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 3. HOW IT WORKS (3 LANGKAH MUDAH) ================= -->
+  <section id="cara-kerja" class="py-16 md:py-24 bg-white border-b border-slate-200/70">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-primary-600 mb-2">
+          Hanya Butuh 3 Langkah
+        </h2>
+        <p class="font-display font-extrabold text-2xl sm:text-4xl text-slate-900 tracking-tight">
+          Cara Kerja Simpel. Tanpa Ribet Buka Laptop.
+        </p>
+        <p class="text-slate-600 mt-3 text-sm sm:text-base">
+          Proses melamar kerja yang biasanya makan waktu 2 jam, sekarang selesai sebelum kopimu dingin.
+        </p>
+      </div>
+
+      <!-- 3 Steps Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 relative">
+        
+        <!-- Step 1 -->
+        <div class="relative bg-slate-50 border border-slate-200/80 rounded-2xl p-6 sm:p-7 hover:border-primary-300 hover:shadow-lg hover:shadow-blue-500/5 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-primary-100 text-primary-700 flex items-center justify-center font-display font-bold text-xl mb-5 shadow-sm">
+            1
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900 mb-2">
+            Forward Teks Loker
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Temukan lowongan di LinkedIn, Glints, Jobstreet, atau media sosial. Cukup copy atau forward teks deskripsi pekerjaannya ke Bot Telegram kami.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative bg-slate-50 border border-slate-200/80 rounded-2xl p-6 sm:p-7 hover:border-primary-300 hover:shadow-lg hover:shadow-blue-500/5 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-primary-600 text-white flex items-center justify-center font-display font-bold text-xl mb-5 shadow-sm shadow-primary-600/20">
+            2
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900 mb-2">
+            AI Proses Standar HRD
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Dalam 5 detik, AI mengekstrak keyword penting yang dicari HRD, menyelaraskan kualifikasi, dan menyusun kalimat profesional tanpa kata-kata klise.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative bg-slate-50 border border-slate-200/80 rounded-2xl p-6 sm:p-7 hover:border-primary-300 hover:shadow-lg hover:shadow-blue-500/5 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-display font-bold text-xl mb-5 shadow-sm">
+            3
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900 mb-2">
+            Hasil Langsung Copas
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Salin Cover Letter Bahasa Inggris dan poin CV ATS yang sudah rapi. Paste langsung ke body email, formulir lamaran, atau profil karirmu.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Mid-page mini CTA -->
+      <div class="mt-12 text-center">
+        <a 
+          href="#" 
+          onclick="openTelegramModal(event)" 
+          class="inline-flex items-center gap-2 text-sm font-bold text-primary-600 hover:text-primary-800 transition-colors"
+        >
+          <span>Buktikan sendiri kecepatannya sekarang</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 4. FITUR & KEUNGGULAN (VS MANUAL & CHATGPT) ================= -->
+  <section id="fitur" class="py-16 md:py-24 bg-slate-50 border-b border-slate-200/70">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-primary-600 mb-2">
+          Fitur & Keunggulan
+        </h2>
+        <p class="font-display font-extrabold text-2xl sm:text-4xl text-slate-900 tracking-tight">
+          Kenapa Bukan Ngetik Sendiri atau ChatGPT Biasa?
+        </p>
+        <p class="text-slate-600 mt-3 text-sm sm:text-base">
+          ChatGPT biasa sering menghasilkan bahasa yang kaku, terdeteksi AI, dan butuh prompt panjang. AI Pawang Loker dibuat khusus sistem rekrutmen.
+        </p>
+      </div>
+
+      <!-- Comparison Matrix Table / Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+        
+        <!-- Manual Column -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 text-slate-600">
+          <div class="font-display font-bold text-base text-slate-700 mb-1">Ngetik Manual</div>
+          <div class="text-xs text-rose-500 font-semibold mb-4">Makan waktu & bikin stres</div>
+          <ul class="space-y-3 text-xs leading-normal">
+            <li class="flex items-start gap-2">
+              <span class="text-rose-500 font-bold">✕</span> Butuh 1-2 jam per 1 surat lamaran
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-rose-500 font-bold">✕</span> Grammar Inggris sering kurang meyakinkan
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-rose-500 font-bold">✕</span> Kata kunci ATS sering terlewatkan
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-rose-500 font-bold">✕</span> Cepat lelah dan hilang motivasi melamar
+            </li>
+          </ul>
+        </div>
+
+        <!-- ChatGPT Column -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 text-slate-600">
+          <div class="font-display font-bold text-base text-slate-700 mb-1">ChatGPT Biasa</div>
+          <div class="text-xs text-amber-600 font-semibold mb-4">Basa-basi & repot prompt</div>
+          <ul class="space-y-3 text-xs leading-normal">
+            <li class="flex items-start gap-2">
+              <span class="text-amber-500 font-bold">△</span> Harus ketik prompt panjang berkali-kali
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-amber-500 font-bold">△</span> Gaya bahasa formal berlebihan (terasa robot)
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-amber-500 font-bold">△</span> Format berantakan saat dicopas
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-amber-500 font-bold">△</span> Harus buka browser, login, dan loading lambat
+            </li>
+          </ul>
+        </div>
+
+        <!-- AI Pawang Loker (Featured) -->
+        <div class="bg-primary-900 text-white rounded-2xl p-6 border-2 border-primary-500 shadow-xl shadow-primary-900/20 relative">
+          <div class="absolute -top-3 right-4 bg-gradient-to-r from-primary-500 to-blue-400 text-white text-[10px] font-extrabold px-3 py-0.5 rounded-full uppercase tracking-wider">
+            Rekomendasi Utama
+          </div>
+          <div class="font-display font-bold text-base text-white mb-1">AI Pawang Loker 🤖</div>
+          <div class="text-xs text-blue-300 font-semibold mb-4">Praktis di Telegram, 5 Detik</div>
+          <ul class="space-y-3 text-xs leading-normal text-blue-100">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">✓</span> Cuma forward teks loker, beres dalam 5 detik
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">✓</span> Prompt sudah disetel tim HRD profesional
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">✓</span> Bahasa Inggris natural berstandar multinasional
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">✓</span> Akses kapan saja langsung di genggaman HP
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- 4 Pillars Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <div class="bg-white p-5 rounded-xl border border-slate-200/90 shadow-sm">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-primary-600 flex items-center justify-center text-lg mb-3">
+            🎯
+          </div>
+          <h3 class="font-display font-bold text-sm text-slate-900 mb-1">Sistem ATS Scanner</h3>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Menyelipkan kata kunci esensial dari deskripsi kerja sehingga lolos screening otomatis perusahaan.
+          </p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-slate-200/90 shadow-sm">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-primary-600 flex items-center justify-center text-lg mb-3">
+            🇬🇧
+          </div>
+          <h3 class="font-display font-bold text-sm text-slate-900 mb-1">English Standar Global</h3>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Grammar sempurna tanpa ejaan kaku. Memberikan impresi kandidat yang fasih dan profesional.
+          </p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-slate-200/90 shadow-sm">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-primary-600 flex items-center justify-center text-lg mb-3">
+            ⚡
+          </div>
+          <h3 class="font-display font-bold text-sm text-slate-900 mb-1">Super Ringan di HP</h3>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Gak perlu download aplikasi berat. Buka Telegram di angkot atau halte, lamaran langsung siap dikirim.
+          </p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-slate-200/90 shadow-sm">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-primary-600 flex items-center justify-center text-lg mb-3">
+            🔒
+          </div>
+          <h3 class="font-display font-bold text-sm text-slate-900 mb-1">Privasi Terjaga 100%</h3>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Data loker dan draf tidak disimpan permanen atau dijual ke pihak ketiga. Privasi Anda nomor satu.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 5. HARGA (PRICING SECTION) ================= -->
+  <section id="harga" class="py-16 md:py-24 bg-white border-b border-slate-200/70">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-primary-600 mb-2">
+          Biaya Ramah Kantong
+        </h2>
+        <p class="font-display font-extrabold text-2xl sm:text-4xl text-slate-900 tracking-tight">
+          Investasi Karir Seharga Segelas Es Kopi
+        </p>
+        <p class="text-slate-600 mt-2 text-sm sm:text-base">
+          Mulai gratis sekarang. Upgrade murah meriah kapan pun kamu butuh melamar massal.
+        </p>
+      </div>
+
+      <!-- Pricing Plans Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch max-w-3xl mx-auto">
+        
+        <!-- Freemium Plan -->
+        <div class="bg-slate-50 border border-slate-200 rounded-3xl p-7 flex flex-col justify-between">
+          <div>
+            <div class="inline-block px-3 py-1 rounded-full bg-slate-200/70 text-slate-700 font-semibold text-xs mb-3">
+              Starter Free
+            </div>
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-1">Coba Dulu Aja</h3>
+            <p class="text-xs text-slate-500 mb-5">Cocok buat kamu yang mau buktiin kualitas bot.</p>
+            
+            <div class="mb-6 pb-6 border-b border-slate-200">
+              <span class="font-display font-extrabold text-4xl text-slate-900">Rp 0</span>
+              <span class="text-xs text-slate-500 font-medium"> / selamanya</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-slate-700 mb-6">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>2x Kuota Gratis</strong> (Cover Letter + CV Points)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Format Standar ATS & English Formal</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Tanpa Perlu Kartu Kredit / No Registrasi</span>
+              </li>
+            </ul>
+          </div>
+
+          <a 
+            href="#" 
+            onclick="openTelegramModal(event)" 
+            class="w-full py-3 px-4 rounded-xl text-center text-xs font-bold text-slate-800 bg-white border border-slate-300 hover:bg-slate-100 transition-colors"
+          >
+            Mulai 2x Gratis
+          </a>
+        </div>
+
+        <!-- Pro Unlimited Plan (Featured) -->
+        <div class="bg-gradient-to-b from-white to-blue-50/70 border-2 border-primary-600 rounded-3xl p-7 flex flex-col justify-between shadow-xl shadow-primary-600/10 relative">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary-600 text-white text-[11px] font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow-sm">
+            ☕ HANYA SEHARGA KOPI
+          </div>
+
+          <div>
+            <div class="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-700 font-semibold text-xs mb-3">
+              Unlimited Pro Pass
+            </div>
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-1">Akses Penuh 1 Bulan</h3>
+            <p class="text-xs text-slate-500 mb-5">Untuk yang lagi aktif sebar lamaran setiap hari.</p>
+            
+            <div class="mb-6 pb-6 border-b border-slate-200">
+              <div class="flex items-baseline gap-1">
+                <span class="font-display font-extrabold text-4xl text-primary-700">Rp 15.000</span>
+                <span class="text-xs text-slate-500 font-medium"> / 30 hari</span>
+              </div>
+              <p class="text-[11px] text-emerald-600 font-medium mt-1">Pembayaran mudah via QRIS / Saweria / E-Wallet</p>
+            </div>
+
+            <ul class="space-y-3 text-xs text-slate-700 mb-6">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-primary-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Unlimited Pembuatan</strong> (Tanpa Batas Selama Sebulan)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-primary-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Pilihan Bahasa Inggris & Bahasa Indonesia</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-primary-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Prioritas Server AI Super Kencang (&lt; 3 detik)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-primary-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Bonus: Panduan Jawaban Interview HRD</span>
+              </li>
+            </ul>
+          </div>
+
+          <a 
+            href="#" 
+            onclick="openTelegramModal(event)" 
+            class="w-full py-3.5 px-4 rounded-xl text-center text-xs sm:text-sm font-bold text-white bg-primary-600 hover:bg-primary-700 shadow-md shadow-primary-600/30 active:scale-[0.98] transition-all"
+          >
+            Aktifkan Akses Pro (Rp 15.000) ⚡
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Payment Support Badges -->
+      <div class="mt-8 text-center">
+        <p class="text-[11px] text-slate-400 font-medium">
+          Mendukung pembayaran mudah via Saweria: QRIS • GoPay • OVO • DANA • ShopeePay • Transfer Bank
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 6. FAQ (PERTANYAAN UMUM) ================= -->
+  <section class="py-14 bg-slate-50 border-b border-slate-200/70">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="text-center font-display font-extrabold text-xl sm:text-2xl text-slate-900 mb-8">
+        Sering Ditanyakan (FAQ)
+      </h2>
+
+      <div class="space-y-3">
+        <!-- FAQ 1 -->
+        <details class="group bg-white rounded-xl border border-slate-200/80 p-4 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+          <summary class="flex items-center justify-between font-semibold text-xs sm:text-sm text-slate-800">
+            <span>Apakah beneran ada kuota gratis?</span>
+            <span class="transition group-open:rotate-180 text-slate-400">▼</span>
+          </summary>
+          <p class="text-xs text-slate-600 mt-2.5 leading-relaxed">
+            Ya! Begitu kamu klik bot di Telegram dan kirim pesan pertama, kamu langsung mendapatkan 2x kuota generate Cover Letter dan CV standar ATS secara cuma-cuma tanpa syarat apa pun.
+          </p>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="group bg-white rounded-xl border border-slate-200/80 p-4 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+          <summary class="flex items-center justify-between font-semibold text-xs sm:text-sm text-slate-800">
+            <span>Bagaimana cara bayar Rp 15.000 setelah kuota gratis habis?</span>
+            <span class="transition group-open:rotate-180 text-slate-400">▼</span>
+          </summary>
+          <p class="text-xs text-slate-600 mt-2.5 leading-relaxed">
+            Di dalam Telegram bot, akan muncul tombol resmi pembayaran Saweria. Cukup scan QRIS menggunakan aplikasi e-wallet apa saja (GoPay, OVO, DANA, BCA, dll). Akses unlimited aktif otomatis dalam 1 menit.
+          </p>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="group bg-white rounded-xl border border-slate-200/80 p-4 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+          <summary class="flex items-center justify-between font-semibold text-xs sm:text-sm text-slate-800">
+            <span>Apakah hasilnya bisa lolos sistem ATS HRD?</span>
+            <span class="transition group-open:rotate-180 text-slate-400">▼</span>
+          </summary>
+          <p class="text-xs text-slate-600 mt-2.5 leading-relaxed">
+            Pasti. AI kami dirancang khusus mengekstrak kata kunci wajib (hard skills, soft skills, dan action verbs) yang disyaratkan oleh lowongan kerja yang kamu kirim, sehingga skor relevansi saat di-scan ATS menjadi sangat tinggi.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 7. FOOTER ================= -->
+  <footer class="bg-white border-t border-slate-200 py-10 text-slate-500 text-xs">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded-lg bg-primary-600 text-white flex items-center justify-center font-bold text-xs">
+          🤖
+        </div>
+        <span class="font-display font-bold text-slate-900">AI Pawang Loker</span>
+        <span class="text-slate-400">• &copy; 2026 Hak Cipta Dilindungi.</span>
+      </div>
+
+      <div class="flex items-center gap-6 text-slate-500">
+        <a href="#" onclick="alert('Kebijakan Privasi: Kami menghargai privasi data loker dan resume Anda. Teks yang diproses tidak pernah dibagikan ke pihak manapun.'); return false;" class="hover:text-primary-600 transition-colors">
+          Kebijakan Privasi
+        </a>
+        <a href="#" onclick="alert('Syarat & Ketentuan: Layanan ini adalah asisten otomatis untuk membantu penulisan lamaran kerja. Pengguna bertanggung jawab memeriksa akurasi pengalaman pribadi.'); return false;" class="hover:text-primary-600 transition-colors">
+          Syarat & Ketentuan
+        </a>
+        <a href="#" onclick="openTelegramModal(event)" class="hover:text-primary-600 transition-colors font-medium text-primary-600">
+          Kontak Bot Telegram
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= 8. MOBILE STICKY FLOATING CTA BAR (GEN Z / TIKTOK READY) ================= -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 shadow-lg flex items-center justify-between gap-3">
+    <div class="flex flex-col">
+      <span class="text-xs font-bold text-slate-900 leading-tight">AI Pawang Loker</span>
+      <span class="text-[10px] text-emerald-600 font-semibold">2x Coba Gratis • 5 Detik</span>
+    </div>
+    <a 
+      href="#" 
+      onclick="openTelegramModal(event)" 
+      class="flex-1 max-w-[200px] text-center py-2.5 px-4 rounded-xl text-xs font-bold text-white bg-primary-600 active:scale-95 transition-all shadow-md shadow-primary-600/30 flex items-center justify-center gap-1.5"
+    >
+      <span>Buka di Telegram</span>
+      <span>🚀</span>
+    </a>
+  </div>
+
+  <!-- ================= 9. INTERACTIVE TELEGRAM REDIRECT MODAL ================= -->
+  <div id="telegram-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-200">
+    <div class="bg-white rounded-3xl max-w-sm w-full p-6 text-center shadow-2xl transform scale-95 transition-transform duration-200" id="modal-box">
+      
+      <div class="w-16 h-16 bg-blue-50 text-primary-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl shadow-inner">
+        ✈️
+      </div>
+
+      <h3 class="font-display font-extrabold text-lg text-slate-900 mb-1">
+        Buka Bot di Telegram
+      </h3>
+      <p class="text-xs text-slate-600 mb-5 leading-relaxed">
+        Kamu akan diarahkan langsung ke bot <strong>@AIPawangLokerBot</strong> di aplikasi Telegram. Nikmati 2x kuota gratis tanpa pendaftaran!
+      </p>
+
+      <div class="bg-slate-50 border border-slate-200 rounded-xl p-3 mb-5 text-left text-xs space-y-1.5">
+        <div class="flex items-center gap-2 text-slate-700">
+          <span class="text-emerald-500 font-bold">✓</span> Akun bot resmi & terverifikasi
+        </div>
+        <div class="flex items-center gap-2 text-slate-700">
+          <span class="text-emerald-500 font-bold">✓</span> Langsung kirim perintah <code>/start</code>
+        </div>
+      </div>
+
+      <div class="space-y-2">
+        <a 
+          href="https://t.me/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-primary-600 hover:bg-primary-700 text-white font-bold text-sm shadow-md shadow-primary-600/20 active:scale-95 transition-all"
+        >
+          <span>Lanjut ke Telegram</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+        <button 
+          onclick="closeTelegramModal()" 
+          class="w-full py-2.5 px-4 rounded-xl text-xs font-semibold text-slate-500 hover:text-slate-800 transition-colors"
+        >
+          Tutup
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= EMBEDDED JAVASCRIPT LOGIC ================= -->
+  <script>
+    // Tab switcher in interactive Telegram preview
+    function switchTab(type) {
+      const clTab = document.getElementById('tab-cl');
+      const cvTab = document.getElementById('tab-cv');
+      const clContent = document.getElementById('content-cl');
+      const cvContent = document.getElementById('content-cv');
+
+      if (type === 'cl') {
+        clTab.className = 'px-2.5 py-1 rounded-md text-xs font-semibold bg-primary-50 text-primary-700 border border-primary-200';
+        cvTab.className = 'px-2.5 py-1 rounded-md text-xs font-medium text-slate-600 hover:bg-slate-50 border border-transparent';
+        clContent.classList.remove('hidden');
+        cvContent.classList.add('hidden');
+      } else {
+        cvTab.className = 'px-2.5 py-1 rounded-md text-xs font-semibold bg-primary-50 text-primary-700 border border-primary-200';
+        clTab.className = 'px-2.5 py-1 rounded-md text-xs font-medium text-slate-600 hover:bg-slate-50 border border-transparent';
+        cvContent.classList.remove('hidden');
+        clContent.classList.add('hidden');
+      }
+    }
+
+    // Interactive copy-to-clipboard demo button
+    function copyDemoText() {
+      const isCL = !document.getElementById('content-cl').classList.contains('hidden');
+      const textToCopy = isCL 
+        ? "Subject: Application for Junior Social Media Specialist - [Your Name]\n\nDear Hiring Team,\n\nI am writing to express my enthusiastic interest in the Social Media Specialist role. Having driven measurable engagement through data-backed content workflows and short-form video storytelling, I am prepared to scale your brand's presence across TikTok and Instagram."
+        : "• Orchestrated multi-channel content calendar, increasing monthly organic reach by 42%.\n• Analyzed audience retention analytics to pivot short-form content hooks, achieving 150k+ views.";
+
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const btnLabel = document.getElementById('copy-btn-label');
+        btnLabel.innerText = "✓ Tersalin!";
+        setTimeout(() => {
+          btnLabel.innerText = "Salin Contoh Teks";
+        }, 2000);
+      }).catch(() => {
+        alert("Contoh teks berhasil disiapkan untuk Anda!");
+      });
+    }
+
+    // Modal open/close handlers
+    function openTelegramModal(e) {
+      if (e) e.preventDefault();
+      const modal = document.getElementById('telegram-modal');
+      const box = document.getElementById('modal-box');
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      box.classList.remove('scale-95');
+      box.classList.add('scale-100');
+    }
+
+    function closeTelegramModal() {
+      const modal = document.getElementById('telegram-modal');
+      const box = document.getElementById('modal-box');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      box.classList.remove('scale-100');
+      box.classList.add('scale-95');
+    }
+
+    // Close modal on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeTelegramModal();
+      }
+    });
+
+    // Close on backdrop click
+    document.getElementById('telegram-modal').addEventListener('click', (e) => {
+      if (e.target === e.currentTarget) {
+        closeTelegramModal();
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+

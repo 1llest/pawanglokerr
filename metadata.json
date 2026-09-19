@@ -1,0 +1,6 @@
+{
+  "name": "AI Pawang Loker",
+  "description": "High-converting landing page untuk AI Pawang Loker, bot Telegram otomatis pembuat CV ATS dan cover letter bahasa Inggris dalam 5 detik.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
